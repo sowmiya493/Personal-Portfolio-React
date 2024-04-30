@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy from "../../img/girl.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -13,6 +13,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -28,20 +29,25 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>SOWMIYA</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            A motivated student looking for on-hand experience and acquiring new knowledge in the IT field as well as enhancing my current skills in different programs and technologies needed for future references.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
+          <button className="button i-button">Click</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/sowmiya493" target="_blank" rel="noopener noreferrer">
+            <img src={Github} alt="GitHub Profile" />
+          </a>
+          <a href="https://www.linkedin.com/in/sowmiya-s-69651824a" target="_blank" rel="noopener noreferrer">
+            <img src={LinkedIn} alt="LinkedIn Profile" />
+          </a>
+          <a href="https://www.instagram.com/_._sowmeii_._/" target="_blank" rel="noopener noreferrer">
+            <img src={Instagram} alt="Instagram Profile" />
+          </a>
         </div>
       </div>
       {/* right image side */}
@@ -52,31 +58,15 @@ const Intro = () => {
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
+          whileInView={{ left: "-14%" }}
           transition={transition}
           src={glassesimoji}
           alt=""
         />
 
-        <motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
-          transition={transition}
-          className="floating-div"
-        >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
-        </motion.div>
-
-        {/* animation */}
-        <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
-          transition={transition}
-          className="floating-div"
-        >
-          {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
-        </motion.div>
+        
+        
+          
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div

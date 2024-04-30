@@ -1,0 +1,56 @@
+/* Education.css */
+
+#education {
+    padding: 80px 0;
+    background: linear-gradient(45deg, #36a3fc, #ff0edf);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .education-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    opacity: 0; /* Initially hide the education items */
+    animation: fadeIn 1s ease forwards; /* Apply fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Fade in and move to original position */
+    }
+  }
+  
+  .education-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .education-item p {
+    margin-bottom: 5px;
+    color: #666;
+  }
+  

@@ -15,31 +15,30 @@ const Testimonial = () => {
     {
       img: profilePic1,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Hello, I'm Sowmiya. With a strong foundation in cloud technologies, I bring a blend of technical expertise and creative flair to the table. Proficient in Java and Python, I've also ventured into the realm of Japanese language, adding a cultural dimension to my skill set.",
     },
     {
       img: profilePic2,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "My journey in the tech world has seen me dive deep into AWS, where I've undertaken various projects, exploring the vast possibilities of cloud-based solutions. Additionally, I've developed small web applications using React, demonstrating my commitment to hands-on learning and experimentation.",
     },
     {
       img: profilePic3,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "I'm currently pursuing my education at Karpagam Institute of Technology, where I've maintained a commendable CGPA of 7.6 up to the fifth semester. Beyond academics, I've actively engaged in extracurricular activities, such as signing and dancing, to nurture a holistic growth mindset.",
     },
     {
       img: profilePic4,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Driven by a passion for design and a fascination with cloud-based technologies, I'm eager to continue exploring new horizons and pushing the boundaries of innovation. With a love for travel, I seek to imbibe diverse experiences that fuel my creativity and drive for excellence.",
     },
   ];
 
   return (
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
+        <span>About Me </span>
+        
       <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
       <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
 
