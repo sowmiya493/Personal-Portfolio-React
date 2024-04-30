@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
    
       - name: Build Docker Image
-        run: docker build -t your_username/port:latest .
+        run: docker build -t sowmiya30/port:latest .
         working-directory: ./path/to/your/dockerfile/directory
 
       - name: Push Docker Image
