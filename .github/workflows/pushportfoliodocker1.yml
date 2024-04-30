@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       
     - name: Login to Docker Hub
       uses: docker/login-action@v2
@@ -20,4 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     
     - name: Build Docker Image
-      run: docker build -t your-docker-username/Personal-Portfolio-React:latest 
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/sysfoo21ita49:latest .
+
+    - name: Push Docker Image
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/sysfoo21ita49:latest
