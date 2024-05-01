@@ -23,4 +23,4 @@ jobs:
       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/reactfolio:latest .
      
     - name: Push Docker Image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/reactfoio:latest
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/reactfolio:latest
